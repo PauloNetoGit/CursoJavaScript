@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Usando Break com DO While
+      document.write(
+        `O Break só é usado quando o valor for maior que 10 <br><br>`
+      );
+
+      let valor = prompt("Digite um número");
+      let indiceDoWhile = 1;
+
+      do {
+        if (valor > 10) {
+          alert("Valor maior que 10");
+          break; //interrompe o loop
+        }
+
+        document.write(
+          `${valor} X ${indiceDoWhile} = ${valor * indiceDoWhile} <br>`
+        );
+        indiceDoWhile++;
+      } while (indiceDoWhile <= 10);
+
+      //Continue Com FOR
+      // document.write(`<br>For <br><br>`);
+
+      let numero = prompt("Digite um número -- Continue no FOR");
+
+      for (let i = 1; i <= 10; i++) {
+        if (i === 5) {
+          continue // Ele pula quando a variável 'i' for identico a 5 e depois continua a conta
+        }
+        document.write(`${numero} X ${i} = ${numero * i} <br>`);
+      }      
+
+    </script>
+  </body>
+</html>
