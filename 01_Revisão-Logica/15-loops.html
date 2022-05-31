@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>  
+      //Calculadora Com FOR
+      document.write(`For <br><br>`);
+      
+      let numero = prompt("Digite um número -- FOR");
+
+      for (let i = 1; i <= 10; i++) {
+        document.write(`${numero} X ${i} = ${numero * i} <br>`);
+      }
+
+      //Calculadora Com While
+      document.write(`<br>While <br><br>`);
+      
+      let numero2 = prompt("Digite um número -- WHILE");
+      let indice = 1;
+
+      while (indice <= 10) {
+        document.write(`${numero2} X ${indice} = ${numero2 * indice} <br>`);
+        indice++;
+      }
+
+      //Calculadora com DO While
+      document.write(`<br>Do While <br><br>`);
+
+      let numero3 = prompt("Digite um número -- DO WHILE");
+      let indiceDoWhile = 1;
+
+      do {
+        document.write(
+          `${numero3} X ${indiceDoWhile} = ${numero3 * indiceDoWhile} <br>`
+        );
+        indiceDoWhile++;
+      } while (indiceDoWhile <= 10);
+
+    </script>
+
+  </body>
+</html>
