@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="30-finally.js"></script>
+    <script>
+        let soma = ""
+         try {
+             soma = sum(3, "4") //tentando somar 3 + "a" isso vai causar um erro
+         } catch (error) {
+             alert(error.message) //captura e exibe a mensagem do  "throw Error" que está no javaScript
+         } finally { //Gerando erro ou não, esse bloco sempre será executado
+            console.log("Bloco Finally");
+         }
+
+         console.log(soma);
+         console.log("Fim do Programa"); // é exibido no console do navegador
+    </script>
+
+</body>
+</html>
